@@ -1,0 +1,9 @@
+[
+    {"id":1,"nombre":"Lenovo T410","precio":180000,"descripcion":"notebook para escritorio","stock":4,"category":"Notebooks"},
+    {"id":2,"nombre":"MSI Morden 14","precio":230000,"descripcion":"notebook de alta gama","stock":4,"category":"Notebooks"},
+    {"id":3,"nombre":"Asus VivoBook Pro15","precio":80000,"descripcion":"procesador para overclok","stock":1,"category":"Notebooks"},
+    {"id":4,"nombre":"PC 8GB Rayzen Nvidia","precio":160000,"descripcion":"PC Gamer gama media baja, economica a tu medida","stock":5,"category":"PC Gamer"},
+    {"id":5,"nombre":"PC Intel 9 16bg RTX 30 Series","precio":50000,"descripcion":"PC Gamer de escritorio gama media alta corretodo lo que quieras","stock":3,"category":"PC Gamer"},
+    {"id":6,"nombre":"PC Intel 9 16bg RTX 30 Series","precio":50000,"descripcion":"PC Gamer gama alta la autentica master race ","stock":3,"category":"PC Gamer"}
+]
+
