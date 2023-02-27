@@ -4,11 +4,11 @@ import { useParams } from 'react-router-dom';
 const ItemDetail = ({datos}) => {
   const {id} = useParams();
    
-  const CatFilter = datos.filter((prod) => prod.id === id);
+  const itemFilter = datos.filter((prod) => prod.id === id);
   
   return(
     <>
-    {CatFilter.map((prod)=>(
+    {itemFilter.map((prod)=>(
       <div key={id}>
         <h2>Nombre:{prod.nombre}</h2>
         <h2>Descripcion:{prod.descripcion}</h2>
@@ -26,4 +26,5 @@ const ItemDetail = ({datos}) => {
 };
 
 export default ItemDetail
+
 

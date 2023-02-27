@@ -1,13 +1,13 @@
-import React, { useEffect, useParams } from 'react'
+import React, {useEffect} from 'react'
 import ItemDetail from './ItemDetail';
 import Base from '../Base.json'
-
+import {useParams} from 'react-router-dom';
 
 
 const ItemDetailContainer = () => {
     const {id} = useParams();
-   
-    
+
+/*    
     const getBase = () =>{
         return new Promise((resolve, reject) => {
             if(Base.length === 0) {
@@ -33,11 +33,12 @@ const ItemDetailContainer = () => {
     fetchingBase();
 },[]);
 
-
+*/
   return(
     <div>
     
     <ItemDetail datos={Base}/>
+    
     </div>
 
   ) 
@@ -46,3 +47,4 @@ const ItemDetailContainer = () => {
 
   
 export default ItemDetailContainer;
+

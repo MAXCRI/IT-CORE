@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Item = ({id,nombre,precio}) => {
     return (
       <div key={id}>
-      <h1>Equipo: {nombre}</h1>
+      <h2>Equipo: {nombre}</h2>
       <p>Precio: {precio}</p>
       <li><Link to={`/item/${id}`}>Detalle</Link></li>
       </div>

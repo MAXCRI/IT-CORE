@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav>
         <div>
             <ul>
-            <div class="float-left"><CartWidget/></div>
+            <div className='float-left'><CartWidget/></div>
               <li><Link to={"/"} href="#">Home</Link></li>
               <li><Link to={"/Productos"} href="#">Productos</Link></li>
               <li><Link to={`category/${"Notebooks"}`}href="#">Notebooks</Link></li>
