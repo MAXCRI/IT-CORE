@@ -5,17 +5,17 @@ import {useParams} from 'react-router-dom';
 
 
 const ItemDetailContainer = () => {
-    const {id} = useParams();
+  /*  const {id} = useParams();
 
-/*    
+
     const getBase = () =>{
         return new Promise((resolve, reject) => {
             if(Base.length === 0) {
                 reject(new Error("No hay Stock de Productos"));
             }
             setTimeout(()=> {
-                const CatFilter = Base.filter((prod) => prod.id === id);
-                resolve(CatFilter);
+                const itemFilter = Base.find((prod) => prod.id === id);
+                resolve(itemFilter);
             },2000);
         });
         
@@ -29,19 +29,16 @@ const ItemDetailContainer = () => {
             console.log(err)
         }
     }
-    
+  
     fetchingBase();
 },[]);
+  */
 
-*/
-  return(
-    <div>
-    
-    <ItemDetail datos={Base}/>
-    
-    </div>
 
-  ) 
+  return  <ItemDetail datos={Base}/> ;
+    
+    
+
     
   };
 

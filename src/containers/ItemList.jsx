@@ -5,9 +5,10 @@ const ItemList = ({datos}) => {
   return (
     <>
     <div>
-    {datos.map((prod) => (
+    {datos?.map((prod) => (
         <Item
         key={prod.id}
+        id={prod.id}
         nombre={prod.nombre}
         precio={prod.precio}
         stock={prod.stock}
