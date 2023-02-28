@@ -43,7 +43,7 @@ import { useParams } from 'react-router-dom';
 
       {category? <ItemList datos={catFilter}/> : <ItemList datos={Base}/>}
       
-      
+    
     </div>
       
   );

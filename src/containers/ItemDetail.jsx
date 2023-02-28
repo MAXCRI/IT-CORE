@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
-import itemCount from './ItemCount'
+import ItemCount from './ItemCount'
 
 
 const ItemDetail = ({datos}) => {
@@ -9,6 +9,7 @@ const ItemDetail = ({datos}) => {
   const itemFilter = datos.filter((prod) => prod.id == id);
   
   return(
+    
     <>
     {itemFilter.map((prod) => (
       <div key={prod.id}><br />
@@ -16,12 +17,11 @@ const ItemDetail = ({datos}) => {
         <h2>Descripcion:{prod.descripcion}</h2>
         <h2>Cetegory:{prod.category}</h2>
         <h2>Stock:{prod.stock}</h2>
-        <h2>Precio:{prod.precio}</h2>
-        <div><itemCount/></div>
+        <h2 >Precio:{prod.precio}</h2>
+        <ItemCount/>
       </div>
-      
-      
     ))}
+    
     </>
     
   )

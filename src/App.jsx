@@ -17,12 +17,12 @@ function App() {
         <Route exact path="/category/:category" element={<ItemListContainer/>}></Route>
         <Route exact path="/item/:id" element={<ItemDetailContainer/>}></Route>
         <Route exact path="/cart" element={<Cart/>} />
-       
         
-      </Routes>
-    
-    
+      </Routes>    
+      
     </BrowserRouter>
+
+    
   );
 };
 
