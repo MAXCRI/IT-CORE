@@ -5,7 +5,7 @@ import {useParams} from 'react-router-dom';
 
 
 const ItemDetailContainer = () => {
-  /*  const {id} = useParams();
+    const {id} = useParams();
 
 
     const getBase = () =>{
@@ -14,7 +14,7 @@ const ItemDetailContainer = () => {
                 reject(new Error("No hay Stock de Productos"));
             }
             setTimeout(()=> {
-                const itemFilter = Base.find((prod) => prod.id === id);
+                const itemFilter = Base.filter((prod) => prod.id === id);
                 resolve(itemFilter);
             },2000);
         });
@@ -32,7 +32,7 @@ const ItemDetailContainer = () => {
   
     fetchingBase();
 },[]);
-  */
+  
 
 
   return  <ItemDetail datos={Base}/> ;
