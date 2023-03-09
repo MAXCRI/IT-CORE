@@ -8,7 +8,7 @@ const Item = ({id,nombre,precio}) => {
       <div key={id}>
       <h2>Equipo: {nombre}</h2>
       <p>Precio: {precio}</p>
-      <li><Link to={`/item/${id}`}>Detalle</Link></li>
+      <button><Link to={`/item/${id}`}>Detalle</Link></button>
       </div>
     )
   }

@@ -5,8 +5,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './containers/Home';
 import ItemDetailContainer from './containers/ItemDetailContainer';
 import Cart from './components/Cart';
+import  {ShoppingCartProvider} from './contexts/ShoppingCartContex'
 function App() {
   return (
+    <ShoppingCartProvider>
     <BrowserRouter>
     
       <Navbar/>
@@ -21,7 +23,7 @@ function App() {
       </Routes>    
       
     </BrowserRouter>
-
+    </ShoppingCartProvider>
     
   );
 };
