@@ -13,14 +13,16 @@ const ItemDetail = ({datos}) => {
     
     <>
     {itemFilter.map((prod) => (
-      <div key={prod.id}><br />
+      <div className='item2'>
+      <div className='card item' key={prod.id}><br />
         <h2>Nombre:{prod.nombre}</h2>
         <h2>Descripcion:{prod.descripcion}</h2>
         <h2>Cetegory:{prod.category}</h2>
         <h2>Stock:{prod.stock}</h2>
         <h2 >Precio:{prod.precio}</h2>
         <ItemCount/>
-        <button><Link to= {`/cart/`}>Comprar</Link></button>
+        <button className='btn btn-secondary'><Link className='link' to= {`/cart/`}>Comprar</Link></button>
+      </div>
       </div>
     ))}
     
