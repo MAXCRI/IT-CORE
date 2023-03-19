@@ -1,21 +1,23 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import carrito from '../img/shopping-cart.gif'
-import { useContext } from 'react';
-import { CartContex } from '../contexts/ShoppingCartContex';
+import { Button } from "@chakra-ui/react";
+import { useContext } from "react";
+import { CartContext } from "../contexts/ShoppingCartContext";
 
 const CartWidget = () => {
+  const [cart, setCart] = useContext(CartContext);
 
-  const [cart, setCart] = useContext(CartContex);
   const quantity = cart.reduce((acc, curr) => {
-    return acc = acc.quantity
-  },0);
+    return acc + curr.quantity;
+  }, 0);
 
   return (
-    <div>
-    <span className='carrito'><Link to={`cart/`}href="#"><img src={carrito} /></Link></span>
-    <span className='carrito'>{quantity}</span>
-    </div>
+    <>
+      <div className="cart">
+        <Button size="md" variant="" colorScheme="#4B4453">
+          <span className="material-symbols-outlined">shopping_cart</span>
+          <span>{quantity}</span>
+        </Button>
+      </div>
+    </>
   );
 };
 

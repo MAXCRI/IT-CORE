@@ -21,7 +21,6 @@ const ItemDetail = ({datos}) => {
         <h2>Stock:{prod.stock}</h2>
         <h2 >Precio:{prod.precio}</h2>
         <ItemCount/>
-        <button className='btn btn-secondary'><Link className='link' to= {`/cart/`}>Comprar</Link></button>
       </div>
       </div>
     ))}
